@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <MyMain/>
     <MyMusics/>
   </div>
 </template>
 
 <script>
-import MyMain from './components/MyMain.vue'
 import MyMusics from './components/MyMusics.vue'
 
 export default {
   name: 'App',
   components: {
-    MyMain,
     MyMusics
 }
 }

@@ -1,6 +1,7 @@
 <template>
   <div class="container">
       <div>{{details.title}}</div>
+      <img :src="details.poster" alt="">
   </div>
 </template>
 
@@ -16,6 +17,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 </style>

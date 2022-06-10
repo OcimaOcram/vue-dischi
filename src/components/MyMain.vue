@@ -16,6 +16,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 </style>

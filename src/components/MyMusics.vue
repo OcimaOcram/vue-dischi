@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <MyMusic/>
+      <MyMusic v-for="(item, i) in musicsList" :key="i" :details="item" />
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
   created () {
       axios.get(this.apiUlr)
       .then((result) =>{
-          this.musicsList = result.data;
+          this.musicsList = result.data.response;
           console.log(result);
       })
       .catch((error) =>{
@@ -38,6 +38,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 </style>
