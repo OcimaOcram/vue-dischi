@@ -1,13 +1,10 @@
 <template>
   <div class="card">
       
-    <img :src="details.poster" alt="">
-    <div>{{details.title}}</div>
-    <div>{{details.author}}</div>
-    <div>{{details.year}}</div>
-
-
-
+        <img :src="details.poster" :alt="details.title">
+        <h3>{{details.title.toUpperCase()}}</h3>
+        <span>{{details.author}}</span>
+        <span>{{details.year}}</span>
   </div>
 </template>
 
@@ -15,7 +12,7 @@
 export default {
   name: 'MyMusic',
   props: {
-    details: Array
+      details: Object,
   }
 }
 </script>
@@ -31,6 +28,7 @@ export default {
     color: black;
 }
 img {
+    margin-top: 15px;
     width: 75%;
     height: 75%;
 }
