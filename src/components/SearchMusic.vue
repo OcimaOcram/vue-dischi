@@ -1,7 +1,7 @@
 <template>
   <div class="select">
       
-      <select name="genre" id="genre" v-model="userSelect" @click.prevent="$emit('selected', userSelect)">
+      <select name="genre" id="genre" v-model="userSelect" @change="$emit('selected', userSelect)">
         <option value="all">Tutti</option>
         <option value="Rock">Rock</option>
         <option value="Pop">Pop</option>
